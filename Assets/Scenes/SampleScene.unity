@@ -402,7 +402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &207995589
 RectTransform:
   m_ObjectHideFlags: 0
@@ -466,7 +466,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 207995591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1903191944}
+        m_TargetAssemblyTypeName: funcionesUI, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &207995591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2642,6 +2654,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2641107533085466720, guid: 6ef205fb71e8b7f408416c4e5a88effe, type: 3}
   m_PrefabInstance: {fileID: 1878763365}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1903191943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903191945}
+  - component: {fileID: 1903191944}
+  m_Layer: 0
+  m_Name: FuncionesIU
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1903191944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903191943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d5a8dce0d7c00f439e642d41aeeae45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1903191945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903191943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 571, y: 285, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1938749464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2641107533085466720, guid: 6ef205fb71e8b7f408416c4e5a88effe, type: 3}
@@ -2823,6 +2879,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6979070318331681838, guid: 6afb68ea4eba3eb4c849106c2cb33663, type: 3}
     - target: {fileID: 7162861140840528129, guid: ecb8a5068a9cac24d8c877108cf01329, type: 3}
+      propertyPath: botonreset
+      value: 
+      objectReference: {fileID: 207995588}
+    - target: {fileID: 7162861140840528129, guid: ecb8a5068a9cac24d8c877108cf01329, type: 3}
       propertyPath: posicionPlayer
       value: 
       objectReference: {fileID: 1309574923}
@@ -2853,3 +2913,4 @@ SceneRoots:
   - {fileID: 162487319}
   - {fileID: 646412979}
   - {fileID: 1136609416}
+  - {fileID: 1903191945}
