@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //tiempoEspera = Random.Range(1,4);
+       tiempoEspera = Random.Range(1,4);
         InvokeRepeating("Spawn", inicio, tiempoEspera);
 
     }
