@@ -7,12 +7,13 @@ public class Spawner : MonoBehaviour
     public GameObject[] cochesPrefab;
     public float tiempoEspera;
     private float inicio = 0.1f;
+    public Transform posicionSpawner;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        tiempoEspera = Random.Range(0,3);
+        //tiempoEspera = Random.Range(1,4);
         InvokeRepeating("Spawn", inicio, tiempoEspera);
 
     }
@@ -22,7 +23,7 @@ public class Spawner : MonoBehaviour
     {
        
         int cochesIndex = Random.Range(0, cochesPrefab.Length);
-        Instantiate(cochesPrefab[cochesIndex].transform);
+        Instantiate(cochesPrefab[cochesIndex], posicionSpawner.position, posicionSpawner.rotation);
 
     }
 }

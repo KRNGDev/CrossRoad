@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 1092220646097134070}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.0972, z: 0}
-  m_LocalScale: {x: 5, y: 10, z: 5}
+  m_LocalPosition: {x: 0, y: 2.91, z: 0}
+  m_LocalScale: {x: 3.76255, y: 7.5251, z: 3.76255}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 957613273137060421}
@@ -115,6 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957613273137060421}
   - component: {fileID: 7162861140840528129}
+  - component: {fileID: 5685321917741931744}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -151,3 +152,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   desplazamiento: 1
+  explosion: {fileID: 0}
+  jugadorAplastado: {fileID: 0}
+--- !u!65 &5685321917741931744
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186214040448765417}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.780895, y: 7.2818446, z: 3.7560658}
+  m_Center: {x: 0.00000035762787, y: 3.0416048, z: -0.012414694}

@@ -8,13 +8,13 @@ public class MovimientoCoche : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        velocidad=Random.Range(20,40);
     }
 
     // Update is called once per frame
     void Update()
     {
-        velocidad=Random.Range(10,100);
+        
         transform.Translate(Vector3.right*velocidad*Time.deltaTime);
     }
 }

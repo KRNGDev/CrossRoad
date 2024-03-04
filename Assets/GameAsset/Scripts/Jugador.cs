@@ -8,6 +8,9 @@ public class Jugador : MonoBehaviour
     private int intervalo = 10;
     private float movimietos = 0f;
     private bool isMoving = false;
+    public GameObject explosion;
+    public GameObject jugadorAplastado;
+    public Transform posicionPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +39,11 @@ public class Jugador : MonoBehaviour
             StartCoroutine(Movimiento("atras"));
         }
     }
-
+private void OnCollisionEnter(Collision other) {
+    Destroy(gameObject);
+    Instantiate(jugadorAplastado,  posicionPlayer.position, posicionPlayer.rotation);
+    Instantiate(explosion, posicionPlayer.position, posicionPlayer.rotation);
+}
 
     IEnumerator Movimiento(string direccion)
     {
